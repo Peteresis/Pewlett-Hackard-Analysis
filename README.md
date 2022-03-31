@@ -1,7 +1,6 @@
-# Pewlett Hackard Analysis
+# Pewlett Hackard Analysis - A pgAdmin and PostgreSQL Study
  
 ## Preparing for the "Silver Tsunami" at Pewlett Hackard
-### A pgAdmin and PostgreSQL Study
 
 ### Background
 
