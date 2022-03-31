@@ -24,6 +24,9 @@ These CSV files had to be imported into database tables and linked between them 
 ### Image 1: Pewlett Hackard ERD entity-relationship diagram (ERD) and database schema
 ![Image1](https://github.com/Peteresis/Pewlett-Hackard-Analysis/blob/2da018219c8c1cd3fb2af9939efc42b96e3e334e/PH_Schema.png)
 
+The SQL code used to create the tables can be found in [this link](https://github.com/Peteresis/Pewlett-Hackard-Analysis/blob/ee969eee70c913e313f3d23fc934add0dc9cd624/Queries/TableCreation.sql). 
+
+
 ## 2. Results:
 
 The deliverables for this analysis are:
@@ -32,9 +35,7 @@ The deliverables for this analysis are:
   - A table with [Unique Titles](https://github.com/Peteresis/Pewlett-Hackard-Analysis/blob/700a40aa6f1e9eb6f477447c252b182d98e41470/Data/unique_titles.csv). `unique_titles.csv`
   - A table with [Retiring Titles](https://github.com/Peteresis/Pewlett-Hackard-Analysis/blob/700a40aa6f1e9eb6f477447c252b182d98e41470/Data/retiring_titles.csv). `retiring_titles.csv`
   
-  [Nesta CMS](http://effectif.com/nesta)
-  
-  
+    
 - The Employees Eligible for the Mentorship Program.
   - A table with the list of employees whose birth dates are between January 1, 1965 and December 31, 1965. The table is 
 
