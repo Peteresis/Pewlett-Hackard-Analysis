@@ -21,11 +21,27 @@ The database provided by PH consisted of 6 CSV files:
 
 These CSV files had to be imported into database tables and linked between them using SQL statements.  The final schema showing the links between the tables is shown in the image below.
 
-### Image 1: Pewlett Hackard database schema
+### Image 1: Pewlett Hackard ERD entity-relationship diagram (ERD) and database schema
 ![Image1](https://github.com/Peteresis/Pewlett-Hackard-Analysis/blob/2da018219c8c1cd3fb2af9939efc42b96e3e334e/PH_Schema.png)
 
-## 2. Results: Provide a bulleted list with four major points from the two analysis deliverables. Use images as support where needed.
+## 2. Results:
 
+The deliverables for this analysis are:
+
+- The Number of [Retiring Employees by Title](https://github.com/Peteresis/Pewlett-Hackard-Analysis/blob/700a40aa6f1e9eb6f477447c252b182d98e41470/Data/retirement_titles.csv). `retirement_titles.csv`
+  - A table with [Unique Titles](https://github.com/Peteresis/Pewlett-Hackard-Analysis/blob/700a40aa6f1e9eb6f477447c252b182d98e41470/Data/unique_titles.csv). `unique_titles.csv`
+  - A table with [Retiring Titles](https://github.com/Peteresis/Pewlett-Hackard-Analysis/blob/700a40aa6f1e9eb6f477447c252b182d98e41470/Data/retiring_titles.csv). `retiring_titles.csv`
+  
+  [Nesta CMS](http://effectif.com/nesta)
+  
+  
+- The Employees Eligible for the Mentorship Program.
+  - A table with the list of employees whose birth dates are between January 1, 1965 and December 31, 1965. The table is 
+
+- Determine the sum of retiring employees grouped by title.
+- Identify the employees eligible for participation in the mentorship program.
+- Determine the number of roles-to-fill grouped by title and department.
+- Determine the number of qualified, retirement-ready employees to mentor the next generation grouped by title and department.
 
 ## 3. Summary: Provide high-level responses to the following questions, then provide two additional queries or tables that may provide more insight into the upcoming "silver tsunami."
 - How many roles will need to be filled as the "silver tsunami" begins to make an impact?
