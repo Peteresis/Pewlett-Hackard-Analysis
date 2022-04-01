@@ -135,21 +135,23 @@ The total number of personnel that have been pre-selected for the post of traine
 
 ### - How many roles will need to be filled as the "silver tsunami" begins to make an impact?
 
-The "silver tsunami" poses a major threat to Pewlett Hackard's future. '30.1 percent,' or '90,398' employees, will need to be replaced. The problem is made more difficult by the fact that there are '45,397' engineers in the organization, accounting for 50.2 percent of all retirees. Another key segment of the labor force that is retiring is the Senior Staff. There are a total of '28,254' departing workers, accounting for 31.3 percent of the total.
+The "silver tsunami" poses a major threat to Pewlett Hackard's future. `30.1%`, or `90,398` employees, will need to be replaced. The problem is made more difficult by the fact that there are `45,397` engineers in the organization, accounting for `50.2%` of all retirees. Another key segment of the labor force that is retiring is the Senior Staff. There are a total of `28,254` departing workers, accounting for `31.3%` of the total.  A more detailed analysis is in Section 2.
 
 Below is a table detailing the composition of the group
 
 #### Image 7: Pewlett Hackard - `unique_titles.csv`
 ![Image7](https://github.com/Peteresis/Pewlett-Hackard-Analysis/blob/1dd649bb3a853ab4a0f737549cc5425c62766fa3/Images/retiring_titles.png)
 
-
 ### - Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees?
 
+The total number of people who have been chosen for the job of trainer is `1,549` people. There are `90,398` people who are retiring.  Dividing `90,398 / 1,549 people who want to be trainers = 59 people per trainer`. In order for the training program to be effective, the company will need to increase at least tenfold the number of people who could become trainers, so that each trainer has only 6 trainees under supervision.  More details in section 2.4.
+
+#### Image 8: Pewlett Hackard - `mentorship_eligibility.csv` Grouped by `title`
+![Image4](https://github.com/Peteresis/Pewlett-Hackard-Analysis/blob/ecf51ea7e6febca2775aa1bd479fd83288df6323/Images/mentorship_elegibility_grouped(1).png)
 
 
 
 
-- Determine the sum of retiring employees grouped by title.
-- Identify the employees eligible for participation in the mentorship program.
-- Determine the number of roles-to-fill grouped by title and department.
-- Determine the number of qualified, retirement-ready employees to mentor the next generation grouped by title and department.
+
+
+
