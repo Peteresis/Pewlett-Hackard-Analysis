@@ -93,15 +93,6 @@ SELECT * FROM mentorship_eligibilty;
 
 
 
-
-
-
-
-
-
-
-
-
 SELECT e.emp_no,
 	e.first_name, 
 	e.last_name,
@@ -116,6 +107,16 @@ ON (e.emp_no = ti.emp_no)
 	WHERE (e.birth_date BETWEEN '1965-01-01' AND '1965-12-31')
 ORDER BY e.emp_no;
 
+-- mentorship_eligibility grouped by title
+-- Count how many people by title
+SELECT COUNT(me.title), me.title
+--INTO retiring_titles_count
+FROM public.mentorship_eligibilty AS me
+GROUP BY me.title
+ORDER BY COUNT(me.title) DESC;
+
+-- Check results
+SELECT * FROM public.mentorship_eligibilty;
 
 
 
