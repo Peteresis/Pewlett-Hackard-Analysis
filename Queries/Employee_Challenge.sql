@@ -119,5 +119,29 @@ ORDER BY COUNT(me.title) DESC;
 SELECT * FROM public.mentorship_eligibilty;
 
 
+-- retirement_titles grouped by title
+-- Count how many people by title
+SELECT COUNT(rt.title), rt.title
+INTO retirement_titles_count
+FROM public.retirement_titles AS rt
+GROUP BY rt.title
+ORDER BY COUNT(rt.title) DESC;
+
+-- Check results
+SELECT * FROM public.retirement_titles_count;
+
+
+
+-- unique_titles grouped by title
+-- Count how many people by title
+SELECT COUNT(ut.title), ut.title
+INTO unique_titles_count
+FROM public.unique_titles AS ut
+GROUP BY ut.title
+ORDER BY COUNT(ut.title) DESC;
+
+-- Check results
+SELECT * FROM public.unique_titles_count;
+
 
 
