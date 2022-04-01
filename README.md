@@ -68,10 +68,14 @@ GROUP BY title
 ORDER BY COUNT(emp_no) DESC;
 ```
 
+Looking at the numbers in the table we see that `90,398 / 300,024 = 30.1%` of the employees of the company are about to retire.  This a tremendous challenge for any company and in particular for Pewlett Hackard because the majority of the retirees are engineers with many years of experience.  So, even if the company manages to hire substitute engineers in a short amount of time, the new hires will require a lot of training before they can contribute effectively to the operations of PH.
+
+The total number of engineers in the Image 4 table is `45,397` or `50.2%` of the retirees.
+
+The Senior Staff group is also another important part of the labor force that os retiring.  There is a total of `28,254` or 31.3% of the group. 
+
 ### Image 4: Pewlett Hackard - `retiring_titles.csv`
 ![Image4](https://github.com/Peteresis/Pewlett-Hackard-Analysis/blob/1dd649bb3a853ab4a0f737549cc5425c62766fa3/Images/retiring_titles.png)
-
-Looking at the numbers in the table we see that `90,398 / 300,024 = 30.1%` of the employees of the company are about to retire
 
 ### 2.4 Results:
 
