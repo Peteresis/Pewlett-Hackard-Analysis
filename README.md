@@ -149,7 +149,8 @@ Below is a table detailing the composition of the group
 #### Image 8: Pewlett Hackard - `mentorship_eligibility.csv` Grouped by `title`
 ![Image4](https://github.com/Peteresis/Pewlett-Hackard-Analysis/blob/ecf51ea7e6febca2775aa1bd479fd83288df6323/Images/mentorship_elegibility_grouped(1).png)
 
-
+## References
+Module 7: Employee Database with SQL, https://courses.bootcampspot.com/courses/1145/pages/7-dot-0-1-exploring-databases-with-sql, :copyright: 202-2021 Trilogy Education Services, Web 01 Apr 2022.
 
 
 
