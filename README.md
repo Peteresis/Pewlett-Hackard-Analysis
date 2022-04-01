@@ -32,9 +32,18 @@ The SQL code used to create the tables can be found in [this link](https://githu
 The deliverables for this analysis are:
 
 - The Number of [Retiring Employees by Title](https://github.com/Peteresis/Pewlett-Hackard-Analysis/blob/700a40aa6f1e9eb6f477447c252b182d98e41470/Data/retirement_titles.csv). `retirement_titles.csv`
+### Image 2: Pewlett Hackard - `retirement_titles.csv`
+![Image2](https://github.com/Peteresis/Pewlett-Hackard-Analysis/blob/19d6690d236b9466c7b8747c107b68ce07080cef/Images/retirement_titles.png)
   - A table with [Unique Titles](https://github.com/Peteresis/Pewlett-Hackard-Analysis/blob/700a40aa6f1e9eb6f477447c252b182d98e41470/Data/unique_titles.csv). `unique_titles.csv`
+### Image 3: Pewlett Hackard - `unique_titles.csv`
+![Image3](https://github.com/Peteresis/Pewlett-Hackard-Analysis/blob/4ced2f465a7bf59b37c8b4112e9c2542f60dbfd4/Images/unique_titles.png)
+
   - A table with [Retiring Titles](https://github.com/Peteresis/Pewlett-Hackard-Analysis/blob/700a40aa6f1e9eb6f477447c252b182d98e41470/Data/retiring_titles.csv). `retiring_titles.csv`
+### Image 4: Pewlett Hackard - `retiring_titles.csv`
+![Image4](https://github.com/Peteresis/Pewlett-Hackard-Analysis/blob/4ced2f465a7bf59b37c8b4112e9c2542f60dbfd4/Images/retiring_titles.png)
 - The [Employees Eligible for the Mentorship Program](https://github.com/Peteresis/Pewlett-Hackard-Analysis/blob/578def9f4ae99c5263375880d37d524d14305bc4/Data/mentorship_eligibilty.csv) whose birth dates are between January 1, 1965 and December 31, 1965. `mentorship_eligibility.csv`
+### Image 5: Pewlett Hackard - `mentorship_eligibility.csv`
+![Image4](https://github.com/Peteresis/Pewlett-Hackard-Analysis/blob/4ced2f465a7bf59b37c8b4112e9c2542f60dbfd4/Images/mentorship_elegibility.png)
   
 ## 3. Summary: Provide high-level responses to the following questions, then provide two additional queries or tables that may provide more insight into the upcoming "silver tsunami."
 - How many roles will need to be filled as the "silver tsunami" begins to make an impact?
