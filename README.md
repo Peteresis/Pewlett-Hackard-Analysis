@@ -60,9 +60,10 @@ Since 90,398 is still a large number to make any decision, we need to refine the
 - A table with [Retiring Titles](https://github.com/Peteresis/Pewlett-Hackard-Analysis/blob/700a40aa6f1e9eb6f477447c252b182d98e41470/Data/retiring_titles.csv). `retiring_titles.csv`
 ### Image 4: Pewlett Hackard - `retiring_titles.csv`
 ![Image4](https://github.com/Peteresis/Pewlett-Hackard-Analysis/blob/40a58b9edb3ac4eac70f3b135492ff065bf3860f/Images/retirement_titles_grouped.png)
-- The [Employees Eligible for the Mentorship Program](https://github.com/Peteresis/Pewlett-Hackard-Analysis/blob/578def9f4ae99c5263375880d37d524d14305bc4/Data/mentorship_eligibilty.csv) whose birth dates are between January 1, 1965 and December 31, 1965. `mentorship_eligibility.csv`
 
 ### 2.4 Results:
+
+- The [Employees Eligible for the Mentorship Program](https://github.com/Peteresis/Pewlett-Hackard-Analysis/blob/578def9f4ae99c5263375880d37d524d14305bc4/Data/mentorship_eligibilty.csv) whose birth dates are between January 1, 1965 and December 31, 1965. `mentorship_eligibility.csv`
 
 ### Image 5: Pewlett Hackard - `mentorship_eligibility.csv`
 ![Image4](https://github.com/Peteresis/Pewlett-Hackard-Analysis/blob/4ced2f465a7bf59b37c8b4112e9c2542f60dbfd4/Images/mentorship_elegibility.png)
