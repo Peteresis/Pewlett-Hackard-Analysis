@@ -35,6 +35,23 @@ The deliverables for this analysis are:
 
 The names of those born between 1952 and 1955 are presented in the table in Image #2 below. The number of entries in this table is calculated using `SELECT count(emp_no) FROM retirement_titles;`, which gives a total of `133,776` lines.  Because the data comprises more than 130,000 lines, it requires additional filtration before it can be useful to PH management. Some entries are duplicated since some employees' titles have changed throughout their careers as they moved from one position to another.
 
+Code used to create this table
+
+```
+SELECT e.emp_no,
+	e.first_name, 
+	e.last_name, 
+	ti.title, 
+	ti.from_date, 
+	ti.to_date	
+INTO retirement_titles
+FROM employees as e
+INNER JOIN titles as ti
+ON (e.emp_no = ti.emp_no)
+	WHERE (e.birth_date BETWEEN '1952-01-01' AND '1955-12-31')
+ORDER BY e.emp_no;
+```
+
 #### Image 2: Pewlett Hackard - `retirement_titles.csv`
 ![Image2](https://github.com/Peteresis/Pewlett-Hackard-Analysis/blob/19d6690d236b9466c7b8747c107b68ce07080cef/Images/retirement_titles.png)
 
@@ -100,10 +117,33 @@ ORDER BY e.emp_no, ti.from_date DESC;
 
 #### Image 5: Pewlett Hackard - `mentorship_eligibility.csv`
 ![Image4](https://github.com/Peteresis/Pewlett-Hackard-Analysis/blob/4ced2f465a7bf59b37c8b4112e9c2542f60dbfd4/Images/mentorship_elegibility.png)
-  
-## 3. Summary: Provide high-level responses to the following questions, then provide two additional queries or tables that may provide more insight into the upcoming "silver tsunami."
-- How many roles will need to be filled as the "silver tsunami" begins to make an impact?
-- Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees?
+
+Using the code below, we obtain another table showing the number of potential trainers per title:
+
+```
+SELECT COUNT(emp_no), title
+FROM public.mentorship_eligibilty
+GROUP BY title
+ORDER BY COUNT(emp_no) DESC;
+```
+The total number of personnel that have been pre-selected for the post of trainer is `1,549`. When we split this amount by the total number of employees departing, we get a group of `90,398 total retirees / 1,549 potential trainers = 59 employees per trainer`. This figure appears to be rather high, implying that if the training program is to be effective, the corporation will need to increase the number of potential trainers by a factor of at least ten. 
+
+#### Image 6: Pewlett Hackard - `mentorship_eligibility.csv` Grouped by `title`
+![Image4](https://github.com/Peteresis/Pewlett-Hackard-Analysis/blob/ecf51ea7e6febca2775aa1bd479fd83288df6323/Images/mentorship_elegibility_grouped(1).png)
+
+## 3. Summary
+
+### - How many roles will need to be filled as the "silver tsunami" begins to make an impact?
+
+The "silver tsunami" poses a major threat to Pewlett Hackard's future. '30.1 percent,' or '90,398' employees, will need to be replaced. The problem is made more difficult by the fact that there are '45,397' engineers in the organization, accounting for 50.2 percent of all retirees. Another key segment of the labor force that is retiring is the Senior Staff. There are a total of '28,254' departing workers, accounting for 31.3 percent of the total.
+
+Below is a table detailing the composition of the group
+
+#### Image 7: Pewlett Hackard - `unique_titles.csv`
+![Image7](https://github.com/Peteresis/Pewlett-Hackard-Analysis/blob/1dd649bb3a853ab4a0f737549cc5425c62766fa3/Images/retiring_titles.png)
+
+
+### - Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees?
 
 
 
