@@ -4,7 +4,7 @@
 
 ### Background
 
-Pewlett-Packard (PH) is a large firm that employs over 300,000 people. Many employees are approaching retirement age, which will result in a significant number of job openings in the organization. The management at PH wants to be prepared for this development, known as the "Silver Tsunami" by designating some of the retirees as mentors to train the future generation of workers who would run Pewlett Hackard's operations and day-to-day activities.
+Pewlett-Packard (PH) is a large firm that currently employs `300,024` people. Many employees are approaching retirement age, which will result in a significant number of job openings in the organization. The management at PH wants to be prepared for this development, known as the "Silver Tsunami" by designating some of the retirees as mentors to train the future generation of workers who would run Pewlett Hackard's operations and day-to-day activities.
 
 ## 1. Overview of the analysis: Explain the purpose of this analysis.
 
@@ -34,7 +34,7 @@ The deliverables for this analysis are:
 ### 2.1 Results:
 - The Number of [Retiring Employees by Title](https://github.com/Peteresis/Pewlett-Hackard-Analysis/blob/700a40aa6f1e9eb6f477447c252b182d98e41470/Data/retirement_titles.csv). `retirement_titles.csv`
 
-The names of those born between 1952 and 1955 are presented in the table in Image #2 below. The number of entries in this table is calculated using `SELECT count(emp_no) FROM retirement_titles;`, which gives a total of 133,776 lines.  Because the data comprises more than 130,000 lines, it requires additional filtration before it can be useful to PH management. Some entries are duplicated since some employees' titles have changed throughout their careers as they moved from one position to another.
+The names of those born between 1952 and 1955 are presented in the table in Image #2 below. The number of entries in this table is calculated using `SELECT count(emp_no) FROM retirement_titles;`, which gives a total of `133,776` lines.  Because the data comprises more than 130,000 lines, it requires additional filtration before it can be useful to PH management. Some entries are duplicated since some employees' titles have changed throughout their careers as they moved from one position to another.
 
 ### Image 2: Pewlett Hackard - `retirement_titles.csv`
 ![Image2](https://github.com/Peteresis/Pewlett-Hackard-Analysis/blob/19d6690d236b9466c7b8747c107b68ce07080cef/Images/retirement_titles.png)
@@ -43,14 +43,14 @@ The names of those born between 1952 and 1955 are presented in the table in Imag
 
   - A table with [Unique Titles](https://github.com/Peteresis/Pewlett-Hackard-Analysis/blob/700a40aa6f1e9eb6f477447c252b182d98e41470/Data/unique_titles.csv). `unique_titles.csv`
 
-Image 3 shows the table with the employees born between 1953 and 1955 but without the duplicates.  The number of entries in the table is now 90,398.  The query used to count them is:
+Image 3 shows the table with the employees born between 1953 and 1955 but without the duplicates.  The number of entries in the table is now `90,398`.  The query used to count them is:
 
 ```
 SELECT Count(DISTINCT emp_no)
 FROM retirement_titles;
 ```
 
-Since 90,398 is still a large number to make any decision, we need to refine the data even further. 
+Since `90,398` is still a large number to make any decision, we need to refine the data even further. 
 
 ### Image 3: Pewlett Hackard - `unique_titles.csv`
 ![Image3](https://github.com/Peteresis/Pewlett-Hackard-Analysis/blob/4ced2f465a7bf59b37c8b4112e9c2542f60dbfd4/Images/unique_titles.png)
@@ -59,9 +59,19 @@ Since 90,398 is still a large number to make any decision, we need to refine the
 
 - A table with [Retiring Titles](https://github.com/Peteresis/Pewlett-Hackard-Analysis/blob/700a40aa6f1e9eb6f477447c252b182d98e41470/Data/retiring_titles.csv). `retiring_titles.csv`
 
+The final filtering step is to present the data of the `90,398` employees grouped by title.  Below is the code used to generate the table shown in Image 4
+
+```
+SELECT COUNT(emp_no), title
+FROM unique_titles
+GROUP BY title
+ORDER BY COUNT(emp_no) DESC;
+```
 
 ### Image 4: Pewlett Hackard - `retiring_titles.csv`
-![Image4](https://github.com/Peteresis/Pewlett-Hackard-Analysis/blob/40a58b9edb3ac4eac70f3b135492ff065bf3860f/Images/retirement_titles_grouped.png)
+![Image4](https://github.com/Peteresis/Pewlett-Hackard-Analysis/blob/1dd649bb3a853ab4a0f737549cc5425c62766fa3/Images/retiring_titles.png)
+
+Looking at the numbers in the table we see that `90,398 / 300,024 = 30.1%` of the employees of the company are about to retire
 
 ### 2.4 Results:
 
