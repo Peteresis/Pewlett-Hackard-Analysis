@@ -31,17 +31,42 @@ The SQL code used to create the tables can be found in [this link](https://githu
 
 The deliverables for this analysis are:
 
+### 2.1 Results:
 - The Number of [Retiring Employees by Title](https://github.com/Peteresis/Pewlett-Hackard-Analysis/blob/700a40aa6f1e9eb6f477447c252b182d98e41470/Data/retirement_titles.csv). `retirement_titles.csv`
+
+The names of those born between 1952 and 1955 are presented in the table in Image #2 below. The number of entries in this table is calculated using `SELECT count(emp_no) FROM retirement_titles;`, which gives a total of 133,776 lines.  Because the data comprises more than 130,000 lines, it requires additional filtration before it can be useful to PH management. Some entries are duplicated since some employees' titles have changed throughout their careers as they moved from one position to another.
+
 ### Image 2: Pewlett Hackard - `retirement_titles.csv`
 ![Image2](https://github.com/Peteresis/Pewlett-Hackard-Analysis/blob/19d6690d236b9466c7b8747c107b68ce07080cef/Images/retirement_titles.png)
+
+### 2.2 Results:
+
   - A table with [Unique Titles](https://github.com/Peteresis/Pewlett-Hackard-Analysis/blob/700a40aa6f1e9eb6f477447c252b182d98e41470/Data/unique_titles.csv). `unique_titles.csv`
+
+Image 3 shows the table with the employees born between 1953 and 1955 but without the duplicates.  The number of entries in the table is now 90,398.  The query used to count them is:
+
+```
+SELECT Count(DISTINCT emp_no)
+FROM retirement_titles;
+```
+
+Since 90,398 is still a large number to make any decision, we need to refine the data even further. 
+
 ### Image 3: Pewlett Hackard - `unique_titles.csv`
 ![Image3](https://github.com/Peteresis/Pewlett-Hackard-Analysis/blob/4ced2f465a7bf59b37c8b4112e9c2542f60dbfd4/Images/unique_titles.png)
 
-  - A table with [Retiring Titles](https://github.com/Peteresis/Pewlett-Hackard-Analysis/blob/700a40aa6f1e9eb6f477447c252b182d98e41470/Data/retiring_titles.csv). `retiring_titles.csv`
+### 2.3 Results:
+
+- A table with [Retiring Titles](https://github.com/Peteresis/Pewlett-Hackard-Analysis/blob/700a40aa6f1e9eb6f477447c252b182d98e41470/Data/retiring_titles.csv). `retiring_titles.csv`
+
+
 ### Image 4: Pewlett Hackard - `retiring_titles.csv`
-![Image4](https://github.com/Peteresis/Pewlett-Hackard-Analysis/blob/4ced2f465a7bf59b37c8b4112e9c2542f60dbfd4/Images/retiring_titles.png)
+![Image4](https://github.com/Peteresis/Pewlett-Hackard-Analysis/blob/40a58b9edb3ac4eac70f3b135492ff065bf3860f/Images/retirement_titles_grouped.png)
+
+### 2.4 Results:
+
 - The [Employees Eligible for the Mentorship Program](https://github.com/Peteresis/Pewlett-Hackard-Analysis/blob/578def9f4ae99c5263375880d37d524d14305bc4/Data/mentorship_eligibilty.csv) whose birth dates are between January 1, 1965 and December 31, 1965. `mentorship_eligibility.csv`
+
 ### Image 5: Pewlett Hackard - `mentorship_eligibility.csv`
 ![Image4](https://github.com/Peteresis/Pewlett-Hackard-Analysis/blob/4ced2f465a7bf59b37c8b4112e9c2542f60dbfd4/Images/mentorship_elegibility.png)
   
